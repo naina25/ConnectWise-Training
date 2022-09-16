@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+/* Navbar section */
+.headerSection{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    background: #fff;
+    box-shadow:0 .5rem 1rem rgb(107, 106, 106);
+}
+
+.headerSection .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.headerSection .logo i{
+    color: #ff7800;
+    padding-right: 10px;
+}
+
+.headerSection .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #130f40;
+}
+
+.headerSection .navbar a:hover{
+    color: #ff7800;
+}
+
+.headerSection .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #130f40;
+    font-size: 2rem;
+    margin-right: .8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.headerSection .icons div:hover{
+    background: #ff7800;
+    color: #fff;
+}
+
+#menu-btn{
+    display: none;
+}
+
+/*search form */
+.headerSection .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110rem;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow:  0 .5rem 1rem rgb(107, 106, 106);
+}
+
+.headerSection .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #130f40;
+    padding: 0 1.5rem;
+}
+
+.headerSection .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: #130f40;
+    cursor: pointer;
+}
+
+.headerSection .search-form label:hover{
+    color: #ff7800;
+}
+
+.headerSection .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.headerSection .shopping-cart{
+    position: absolute;
+    top: 110%;
+    right: -110rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgb(107, 106, 106);
+    width: 32rem;
+    background: #fff;
+}
+
+.headerSection .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.headerSection .shopping-cart .box .img-div img{
+    height: 10rem;
+    width: 10rem;
+}
+.headerSection .shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+}
+.headerSection .shopping-cart .box .content h3{
+    font-size: 1.6rem;
+    color: #130f40;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.headerSection .shopping-cart .box .content span{
+    font-size: 1.4rem;
+    color: #666;
+}
+.headerSection .shopping-cart .box .fa-trash:hover{
+    color: #ff7800;
+}
+
+/* checkout div */
+.checkout-div{
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-align: center;
+}
+.checkout-div .total{
+   margin: 20px 0;
+   font-weight: bolder;
+}
+.checkout-div a.btn{
+    padding: 5px 50px;
+    border-radius: 5px;
+    border: 2px solid #ff7800;
+    width: 50rem;
+    background: #ff7800;
+    color: #eee;
+}
+.headerSection .shopping-cart.showCart{
+    right: 2rem;
+    transition: .4s linear;
+}

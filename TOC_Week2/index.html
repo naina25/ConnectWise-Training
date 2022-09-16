@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery Store</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     <!-- stylesheet link -->
+     <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- header section -->
+   <header class="headerSection">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>My Grocery Store</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#reviews">Reviews</a>
+        <a href="contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <!-- search form -->
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Type here to search...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    
+    <!-- shopping cart -->
+    <div class="shopping-cart">
+        <div class="box">
+            <div class="img-div">
+                <img src="imgs/coconut.jpg" alt="" srcset="">
+            </div>
+            <div class="content">
+                <h3>Coconut</h3>
+                <span class="price">Rs.140/-</span>
+                <span class="quantity">qty: 2</span>
+            </div>
+            <i class="fas fa-trash"></i>
+        </div>
+        <div class="box">
+            <div class="img-div">
+                <img src="imgs/maggi.jpg" alt="" srcset="">
+            </div>
+            <div class="content">
+                <h3>Maggi</h3>
+                <span class="price">Rs.50/-</span>
+                <span class="quantity">qty: 5</span>
+            </div>
+            <i class="fas fa-trash"></i>
+        </div>
+        <div class="box">
+            <div class="img-div">
+                <img src="imgs/mangoes.JPG" alt="" srcset="">
+            </div>
+            <div class="content">
+                <h3>Mangoes</h3>
+                <span class="price">Rs.90/-</span>
+                <span class="quantity">qty: 1kg</span>
+            </div>
+            <i class="fas fa-trash"></i>
+        </div>
+        <div class="checkout-div">
+            <div class="total">Cart Total:- Rs.280/-</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+    </div>
+   </header>
+
+    <!-- js file link -->
+    <script src="script.js"></script>
+</body>
+</html>
