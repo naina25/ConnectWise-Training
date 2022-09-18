@@ -232,22 +232,21 @@ section{
     justify-content: center;
     padding-top: 17rem;
     padding-bottom: 10rem;
-    height: 380px;
+    height: 400px;
 }
 
 .outer-div{
     background: rgba(0, 0, 0, 0.7);
-    height: 380px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 0;
 }
-
 .home .content{
     position: relative;
-    padding-top: 10rem;
+    padding-top: 12rem;
     padding-bottom: 10rem;
     width: 70rem;
     margin: auto;
@@ -271,4 +270,57 @@ section{
 .home .content h3 span{
     font-size: 3.5rem;
     margin-bottom: 10px;
+}
+
+/* features section */
+h1.heading{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px dashed #ff7800;
+    border-bottom: 3px dashed #ff7800;
+    width: 350px;
+    margin: 40px auto;
+    color: #130f40;
+}
+
+.features .cards-div{
+    display: flex;
+    justify-content: center;
+}
+
+.features .card {
+    border: 2px solid #fff;
+    padding: 5px 5px 30px;
+    background-color: #fff;
+    margin: 0 10px;
+    text-align: center;
+    /* box-shadow: .2rem .5rem 1rem rgb(107, 106, 106); */
+}
+.features .card img{
+    width: 350px;
+    max-height: 219px;
+}
+.features .card h3{
+    color: #130f40;
+    font-size: 2rem;
+}
+.features .card p{
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    margin: 0 0 20px;
+}
+.features .card .btn{
+    font-size: 1.5rem;
+    width: 30rem !important;
+    background-color: #fff;
+    color: #130f40;
+    font-weight: bold;
+}
+.features .card .btn:hover{
+    background-color: #ff7800;
+    color: #fff;
+}
+.features .card:hover{
+    box-shadow: .2rem .5rem 1rem rgb(107, 106, 106);
 }
