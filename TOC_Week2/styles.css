@@ -113,11 +113,6 @@ body{
     color: #ff7800;
 }
 
-.headerSection .search-form.active{
-    right: 2rem;
-    transition: .4s linear;
-}
-
 .headerSection .shopping-cart{
     position: absolute;
     top: 110%;
@@ -170,7 +165,7 @@ body{
    margin: 20px 0;
    font-weight: bolder;
 }
-.checkout-div a.btn{
+.btn{
     padding: 5px 50px;
     border-radius: 5px;
     border: 2px solid #ff7800;
@@ -178,7 +173,102 @@ body{
     background: #ff7800;
     color: #eee;
 }
-.headerSection .shopping-cart.showCart{
+.headerSection .login-form{
+    position: absolute;
+    top: 110%;
+    right: -110rem;
+    width: 30rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgb(107, 106, 106);
+}
+
+.headerSection .login-form h3{
+    font-size: 2.5rem;
+    color: #130f40;
+}
+.headerSection .login-form .box{
+    width: 100%;
+    background: #eee;
+    margin: .7rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #130f40;
+    border-radius: .5rem;
+}
+.headerSection .login-form .btn{
+    width: 20rem;
+    font-size: 1.6rem;
+    margin: 18px;
+    font-weight: 500;
+}
+.headerSection .login-form a{
+    font-size: 1.2rem;
+}
+.headerSection .login-form i{
+    font-size: 2.5rem;
+    border: 3px solid #130f40;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+/* active class */
+.headerSection .search-form.active, .headerSection .shopping-cart.active, .headerSection .login-form.active{
     right: 2rem;
     transition: .4s linear;
+}
+section{
+    padding: 2rem 9%;
+}
+/* home */
+.home{
+    background: url(./imgs/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    height: 380px;
+}
+
+.outer-div{
+    background: rgba(0, 0, 0, 0.7);
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.home .content{
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    width: 70rem;
+    margin: auto;
+    text-align: center;
+}
+.home .content h3{
+    font-size: 2rem;
+    color: #eee;
+}
+.home .content span{
+    color: #ff7800;
+}
+.home .content .btn{
+    font-size: 1.6rem;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    margin: 20px 0;
+}
+.home .content h3 span{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }
