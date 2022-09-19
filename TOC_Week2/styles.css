@@ -13,12 +13,12 @@
 html{
     font-size: 10px;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
 
 body{
     background: #eee;
+    /* scroll-behavior: smooth; */
 }
 
 /* Navbar section */
@@ -214,6 +214,16 @@ body{
     border-radius: 100%;
 }
 
+.headerSection .login-form #close{
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.headerSection .login-form .closeDiv{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /* active class */
 .headerSection .search-form.active, .headerSection .shopping-cart.active, .headerSection .login-form.active{
     right: 2rem;
@@ -222,6 +232,7 @@ body{
 section{
     padding: 2rem 9%;
 }
+
 /* home */
 .home{
     background: url(./imgs/banner.png);
@@ -272,7 +283,7 @@ section{
     margin-bottom: 10px;
 }
 
-/* features section */
+/* common cards section */
 h1.heading{
     font-size: 3.5rem;
     text-align: center;
@@ -288,14 +299,12 @@ h1.heading{
     display: flex;
     justify-content: center;
 }
-
 .card {
     border: 2px solid #fff;
     padding: 5px 5px 30px;
     background-color: #fff;
-    margin: 0 10px;
+    margin: 10px;
     text-align: center;
-    /* box-shadow: .2rem .5rem 1rem rgb(107, 106, 106); */
 }
 .card h3{
     color: #130f40;
@@ -320,11 +329,49 @@ h1.heading{
 .card:hover{
     box-shadow: .2rem .5rem 1rem rgb(107, 106, 106);
 }
+
+/* features/categories/products */
 .features .card img{
     width: 350px;
     max-height: 219px;
 }
-.categories .card img{
+.categories .card img, .products .card img{
     width: 250px;
     max-height: 156px;
+}
+
+.products .card{
+    border: 2px solid rgb(202, 202, 202);   
+    border-radius: 10px;
+    width: 23%;
+}
+.products-cards-div{
+    flex-wrap: wrap;
+}
+.products .card .stars i{
+    color: #ff7800;
+    margin: 10px 0 25px;
+    font-size: 1.6rem;
+}
+.products .price{
+    font-size: 1.5rem;
+    color: #666;
+}
+.products .btn{
+    border: 2px solid #130f40;
+    cursor: pointer;
+}
+.products .btn:hover{
+    border: 2px solid #130f40;
+    background: #130f40;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    padding: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    background: #130f40;
+    color: #eee;
 }

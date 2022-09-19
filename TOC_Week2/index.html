@@ -21,8 +21,6 @@
         <a href="#features">Features</a>
         <a href="#products">Products</a>
         <a href="#categories">Categories</a>
-        <a href="#reviews">Reviews</a>
-        <a href="contact">Contact</a>
     </nav>
 
     <div class="icons">
@@ -79,15 +77,28 @@
         </div>
     </div>
 
-    <form action="" class="login-form">
+    <!-- Login form -->
+    <form action="" class="login-form" id="login">
         <i class="fa-solid fa-user"></i>
         <h3>Sign In</h3>
         <input type="email" placeholder="Your Email" class="box">
         <input type="password" placeholder="Your Password" class="box">
         <a href="#">Forgot your password? Reset here</a>
         <br>
-        <a href="#">Don't have an account? Sign Up</a>
+        <a href="#signup" id="createAccount">Don't have an account? Sign Up</a>
         <input type="submit" value="Sign In" class="btn">
+    </form>
+    
+    <!-- sign up form -->
+    <form action="" class="login-form" id="signup">
+        <div class="closeDiv"><i class="fa-solid fa-xmark" id="close"></i></div>
+        <i class="fa-solid fa-user-plus"></i>
+        <h3>Create Account</h3>
+        <input type="text" placeholder="Your Name" class="box">
+        <input type="email" placeholder="Your Email" class="box">
+        <input type="password" placeholder="Your Password" class="box">
+        <input type="password" placeholder="Confirm Password" class="box">
+        <input type="submit" value="Register" class="btn">
     </form>
    </header>
 
@@ -98,7 +109,7 @@
             <h3>Shop with India's best grocery store</h3>
             <h3> <span>My Grocery Store</span></h3>
             <p>Did you ever imagine that the freshest of <span>fruits and vegetables</span>, top quality food grains, <span>dairy products</span> and hundreds of branded items could be handpicked and delivered to your home. India’s best online megastore, My Grocery Store, brings a whopping 20000+ products with more than 1000 brands, with millions of happy customers.</p>
-            <a href="#" class="btn">Shop now</a>
+            <a href="#products" class="btn">Shop now</a>
         </div>
     </div>
    </section>
@@ -131,6 +142,7 @@
     <!-- Products section -->
    <section class="products" id="products">
     <h1 class="heading">Our Products</h1>
+    <div class="cards-div products-cards-div"></div>
    </section>
 
    <!-- Categories section -->
@@ -141,29 +153,32 @@
             <img src="imgs/category1.jpg" alt="">
             <h3>Organic Vegetables</h3>
             <p>We provide 100% fresh and organic fruits and vegetables right at your doorstep</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="https://organicboosting.bio/en/organic-fruits-and-vegetables-classification-why-to-choose-them-benefits-and-seasons/" class="btn" target="_blank">Read More</a>
         </div>
         <div class="card">
             <img src="imgs/category2.jpg" alt="">
             <h3>Fresh Fruits</h3>
             <p>We deliver 100% fresh and organic fruits and vegetables right at your doorstep</p>
-            <a href="#" class="btn">Read More</a>
+            <a href="https://organicboosting.bio/en/organic-fruits-and-vegetables-classification-why-to-choose-them-benefits-and-seasons/" class="btn" target="_blank">Read More</a>
         </div>
         <div class="card">
             <img src="imgs/category3.jpg" alt="">
             <h3>Dairy Products</h3>
-            <p>We provide 100% fresh and organic fruits and vegetables right at your doorstep</p>
-            <a href="#" class="btn">Read More</a>
+            <p>Milk, Curd, or anything, my grocery store provides you with 100% pure and fresh dairy products.</p>
+            <a href="https://www.dairy.com.au/health/dairy-health-benefits" class="btn" target="_blank">Read More</a>
         </div>
         <div class="card">
             <img src="imgs/category4.jpg" alt="">
             <h3>Fresh Meat</h3>
-            <p>We provide 100% fresh and organic fruits and vegetables right at your doorstep</p>
-            <a href="#" class="btn">Read More</a>
+            <p>You believe in us, and we believe in quality. Fresh meat is now available at my grocery store.</p>
+            <a href="https://meatscience.org/TheMeatWeEat/topics/fresh-meat" class="btn" target="_blank">Read More</a>
         </div>
     </div>
    </section>
 
+   <footer>
+    Made with ❤️ by Naina Upadhyay
+   </footer>
 
     <!-- js file link -->
     <script src="script.js"></script>
